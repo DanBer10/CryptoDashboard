@@ -92,11 +92,7 @@ const CurrencyConverter = () => {
             <tr>
               <td>Secondary Currency:</td>
               <td>
-                <input
-                  name="currency-amount-2"
-                  value={result}
-                  disabled={true}
-                />
+                <input name="currency-amount-2" disabled={true} />
               </td>
               <td>
                 <select
