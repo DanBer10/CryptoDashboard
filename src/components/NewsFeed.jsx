@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const api_key = import.meta.env.VITE_API_KEY;
+const api_key = import.meta.env.PROD.VITE_API_KEY;
 
 const NewsFeed = () => {
   const [articles, setArticles] = useState(null);
@@ -29,6 +29,7 @@ const NewsFeed = () => {
 
   const first7Articles = articles?.slice(0, 7);
 
+  console.log(import.meta.env.PROD);
   return (
     <div className="news-feed">
       <h2>News Feed</h2>
